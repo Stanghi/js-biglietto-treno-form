@@ -55,6 +55,44 @@ body{
     background-color: orange;
 }
 
+.ticket{
+    width: 700px;
+    height: 100px;
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.ticket-left{
+    width: 31%;
+    background-color: blueviolet;
+    color: white;
+}
+
+.ticket-content{
+    width: 69%;
+}
+
+.ticket-left p:first-child{
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.region {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.region p{
+    margin-bottom: 0;
+}
+
+.region p:first-child{
+    font-weight: bold;
+}
+
 /* -----------------HEADER----------------- */
 
 /* ------------------MAIN------------------ */

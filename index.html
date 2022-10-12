@@ -37,22 +37,41 @@
                 </div>
 
                 <div class="ms-card mb-5 color-dark-violet">
-                    <form action="" class="d-flex flex-column">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <form action="" class="d-flex flex-column ">
                         <div class="mb-4 d-flex">
-                            <div class="me-5">
-                                <label class="form-label">Nome Cognome</label>
-                                <input type="text" class="form-control mb-3">
+
+                            <div class="me-5 ">
+                                <label class="form-label">Nome e Cognome</label>
+                                <input id="nome-utente" type="text" class="form-control mb-3 " value="Giuseppe Verdi">
                             </div>
 
-                            <div class="me-5">
+                            <div class="me-5 ">
                                 <label class="form-label">Km da percorrere</label>
-                                <input id="distanza" type="text" class="form-control mb-3">
+                                <input id="distanza" type="text" class="form-control mb-3 " value="145">
                             </div>
                             
-                            <div>
+                            <div class="">
                                 <label class="form-label">Fascia d'età</label>
-                                <select id="etaUtente" class="form-select" aria-label="Default select example">
-                                    <option value="1">Maggiorenne</option>
+                                <select id="eta-utente" class="form-select" aria-label="Default select example">
+                                    <option selected value="1">Maggiorenne</option>
                                     <option value="2">Minorenne</option>
                                     <option value="3">Over 65</option>
                                 </select>
@@ -60,14 +79,60 @@
                         </div>
 
                         <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btn-primary me-2">Genera</button>
-                            <button type="button" class="btn btn-danger">Annulla</button>
+                            <button id="btn-input" type="button" class="btn btn-primary me-2">Genera</button>
+                            <button id="btn-annulla" type="button reset" class="btn btn-danger">Annulla</button>
                         </div>
                     </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
         
                 <div class="ms-card color-dark-violet">
-                    <h2>Biglietto</h2>
+                    <h2 class="text-uppercase fs-5 fw-bold">Dettaglio passeggeri</h2>
+                    <div class="ticket d-flex">
+                        <div class="ticket-left p-3">
+                            <p class="m-0">Nome Passeggero</p>
+                            <p class="m-0" id="nome-utene"></p>
+                        </div>
+
+                        <div class="ticket-content d-flex justify-content-between p-3">
+                            <div class="region">
+                                <p>Offerta</p>
+                                <p id="tipo-biglietto"></p>
+                            </div>
+
+                            <div class="region">
+                                <p>Carrozza</p>
+                                <p>5</p>
+                            </div>
+
+                            <div class="region">
+                                <p>Codice CP</p>
+                                <p>92911</p>
+                            </div>
+
+                            <div class="region">
+                                <p>Costo Biglietto</p>
+                                <p id="prezzo"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
     
                 <div class="author">
