@@ -4,9 +4,17 @@ const scontoQuaranta = 40;
 let sconto;
 let prezzoFinale;
 
+const msCardTicket = document.querySelector('.ms-card-ticket');
+let msCardTicketInvisible = true;
+
 // BOTTONE "GENERA"
 const btnInput = document.getElementById('btn-input');
 btnInput.addEventListener('click', function(){
+
+    // TOGLI DISPLAY NONE A TICKET
+    if (msCardTicketInvisible){
+        msCardTicket.classList.remove('hide');
+    }
 
     //INPUT-OUTPUT NOME UTENTE
     const name = document.getElementById('nome-utente').value;   
