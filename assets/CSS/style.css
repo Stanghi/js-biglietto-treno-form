@@ -51,12 +51,9 @@ body{
     color: #42255F;
 }
 
-.background-orange{
-    background-color: orange;
-}
 
 .ticket{
-    width: 700px;
+    width: 800px;
     height: 100px;
     background-color: white;
     border-top: 1px solid black;
@@ -64,13 +61,13 @@ body{
 }
 
 .ticket-left{
-    width: 31%;
-    background-color: blueviolet;
+    width: 30%;
+    background-color: #0D6EFD;
     color: white;
 }
 
 .ticket-content{
-    width: 69%;
+    width: 70%;
 }
 
 .ticket-left p:first-child{

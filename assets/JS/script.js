@@ -47,6 +47,12 @@ btnInput.addEventListener('click', function(){
     // OUTPUT NOME UTENTE SU TICKET
     document.getElementById('nome-utene').innerHTML += name;
 
+    // OUTPUT CARROZZA UTENTE SU TICKET
+    document.getElementById('carrozza').innerHTML += Math.floor(Math.random() * 10) + 1;
+
+    // OUTPUT CP UTENTE SU TICKET
+    document.getElementById('cp').innerHTML += Math.floor(Math.random() * 99999) + 10000;
+
     // OUTPUT PREZZO FIXED SU TICKET
     let prezzoFinaleFixed = prezzoFinale.toFixed(2);
     let outputPrezzoFinale = `<strong class="color-output">${prezzoFinaleFixed} €<strong>`
