@@ -30,31 +30,31 @@ btnInput.addEventListener('click', function(){
     if (etaUtente === "min"){
         sconto = (prezzoBiglietto / 100) * scontoVenti;
         prezzoFinale = prezzoBiglietto - sconto;
-        document.getElementById('tipo-biglietto').innerHTML += 'Sconto minorenni';
+        document.getElementById('tipo-biglietto').innerHTML = 'Sconto minorenni';
     }
     // CALCOLO BIGLIETTO PER OVER 65
     else if (etaUtente === "over"){
         sconto = (prezzoBiglietto / 100) * scontoQuaranta;
         prezzoFinale = prezzoBiglietto - sconto;
-        document.getElementById('tipo-biglietto').innerHTML += 'Sconto over 65';
+        document.getElementById('tipo-biglietto').innerHTML = 'Sconto over 65';
     }
     // PREZZO STANDARD PER MAGGIORENNI
     else{
         prezzoFinale = prezzoBiglietto
-        document.getElementById('tipo-biglietto').innerHTML += 'Biglietto standard';
+        document.getElementById('tipo-biglietto').innerHTML = 'Biglietto standard';
     }
 
     // OUTPUT NOME UTENTE SU TICKET
-    document.getElementById('nome-utene').innerHTML += name;
+    document.getElementById('nome-utene').innerHTML = name;
 
     // OUTPUT CARROZZA UTENTE SU TICKET
-    document.getElementById('carrozza').innerHTML += Math.floor(Math.random() * 10) + 1;
+    document.getElementById('carrozza').innerHTML = Math.floor(Math.random() * 10) + 1;
 
     // OUTPUT CP UTENTE SU TICKET
-    document.getElementById('cp').innerHTML += Math.floor(Math.random() * 99999) + 10000;
+    document.getElementById('cp').innerHTML = Math.floor(Math.random() * 99999) + 10000;
 
     // OUTPUT PREZZO FIXED SU TICKET
     let prezzoFinaleFixed = prezzoFinale.toFixed(2);
     let outputPrezzoFinale = `<strong class="color-output">${prezzoFinaleFixed} €<strong>`
-    document.getElementById('prezzo').innerHTML += outputPrezzoFinale;
+    document.getElementById('prezzo').innerHTML = outputPrezzoFinale;
 });
